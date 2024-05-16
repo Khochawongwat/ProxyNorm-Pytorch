@@ -89,4 +89,4 @@ class ProxyNorm1d(nn.Module):
 
         tilde_z = (z - mean) * std
 
-        return tilde_z
+        return tilde_z.squeeze(0)
